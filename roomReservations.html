@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Omar Aguilar
+        December 06, 2024  -->
+        <title>Web Project Assignment</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="webProject.css">
+        <script src="webProject.js" defer></script>
+    </head>
+    <body id="form-body">
+        <div class="text-image-container">
+            <div class="text-container">
+                <h1>Reservation Form</h1>
+            </div>
+            <div class="image-container">
+                <img src="images/UHlogo.png" alt="University of Houston logo" id="uhlogo">
+            </div>
+        </div>
+        <div class="topNav">
+            <a href="homePage.html" class="navLink">Home</a>
+            <a href="rooms.html" class="navLink">Rooms</a>
+            <a href="roomReservations.html" class="active" class="navLink">Room Reservation</a>
+            <a href="FAQ.html" class="navLink">FAQ</a>
+        </div>
+        <!-- Room Reservation page contect -->
+        <main>
+            <h1 id="resForm">Reservation Form</h1>
+            <!-- Room Reservation Form -->
+            <form method="post" action="">
+                <!-- Fieldset for choosing room and time -->
+                <fieldset>
+                    <legend>Choose Room and Schedule Time Slot</legend>
+                    <label for="conference-room"><input type="radio" name="room" id="conference-room" class="inline" /> Conference Room</label>
+                    <label for="multipurpose-hall"><input type="radio" name="room" id="multipurpose-hall" class="inline" /> Multipurpose Hall</label>
+                    <label for="study-lounge"><input type="radio" name="room" id="study-lounge" class="inline" /> Study Lounge</label>
+                    <label for="tech-lab"><input type="radio" name="room" id="tech-lab" class="inline" /> Tech Lab</label>
+                    <label for="creative-studio"><input type="radio" name="room" id="creative-studio" class="inline" /> Creative Studio</label>
+                    <label for="start">Start Date and Time: <input type="datetime-local" name="start" id="start" required /></label>
+                    <label for="end">End Date and Time: <input type="datetime-local" name="end" id="end" required /></label>
+                </fieldset>
+                <hr>
+                <!-- Fieldset for user information -->
+                <fieldset>
+                    <legend>Enter Your Information</legend>
+                    <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+                    <label for="last-name">Enter Your Last Name: <input id="last name" name="last-name" type="text" required /></label>
+                    <label for="email">Enter Your Email: <input id="email" name="email" type="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+                        placeholder="e.g., user@example.com" required /></label>
+                    <label for="phone-number">Enter Your Phone Number: <input id="phone-number" name="phone-number" type="tel" 
+                        pattern="^(\+?\d{1,2}\s?)?(\(?\d{3}\)?[\s.-]?)?\d{3}[\s.-]?\d{4}$" placeholder="e.g., (123) 456-7890" 
+                        required title="Please enter a valid phone number in the format (123) 456-7890" /></label>
+                </fieldset>
+                <hr>
+                <!-- Fieldset for contact preference -->
+                <fieldset>
+                    <legend>Choose contact preference</legend>
+                    <label for="email-pref"><input type="radio" id="email-pref" name="pref" class="inline" checked /> Email</label>
+                    <label for="phone-call"><input type="radio" id="phone-call" name="pref" class="inline"> Phone (Call)</label>
+                    <label for="phone-text"><input type="radio" id="phone-text" name="pref" class="inline"> Phone (Text)</label>
+                </fieldset>
+                <hr>
+                <!-- Fieldset for comments -->
+                <fieldset>
+                    <label for="comments">Comments: <textarea name="comments" id="comments" rows="3" cols="30" placeholder="Enter Comments Here..."></textarea></label>
+                </fieldset>
+                <!-- Submit Button -->
+                <input type="submit" id="submit" value="Submit" />
+            </form>
+        </main>
+    </body>
+</html>

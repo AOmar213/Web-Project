@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" id="faq-html" class="web-html">
+    <head>
+        <!-- Omar Aguilar
+        December 06, 2024  -->
+        <title>Web Project Assignment</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="webProject.css">
+        <script src="webProject.js" defer></script>
+    </head>
+    <body id="faq-body" class="web-body">
+        <!-- Header -->
+        <!-- Group h1 and logo to style on same line -->
+        <div class="text-image-container">
+            <div class="text-container">
+                <h1>Frequently Asked Questions</h1>
+            </div>
+            <div class="image-container">
+                <img src="images/UHlogo.png" alt="University of Houston logo" id="uhlogo">
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <div class="topNav">
+            <a href="homePage.html" class="navLink">Home</a>
+            <a href="rooms.html" class="navLink">Rooms</a>
+            <a href="roomReservations.html" class="navLink">Room Reservation</a>
+            <a href="FAQ.html" class="active" class="navLink">FAQ</a>
+        </div>
+        <!-- FAQ page content -->
+        <main>
+            <h2 class="page-header">Frequently Asked Questions</h2>
+            <hr>
+            <!-- Collapsible FAQ questions -->
+            <details> <!-- Q1 -->
+                <summary>What are the operating hours of the Student Center?</summary>
+                <p>The UH Student Center is open Monday to Friday from 7:00 AM to 11:00 PM, 
+                    Saturday from 9:00 AM to 9:00 PM, and Sunday from 12:00 PM to 8:00 PM. 
+                    Hours may vary during holidays and breaks.</p>
+            </details>
+            <hr>
+            <details> <!-- Q2 -->
+                <summary>How can I reserve a room or event space in the Student Center?</summary>
+                <p>Room reservations can be made through the aStudent Center’s online reservation system. 
+                    Visit our "<a href="roomReservations.html" id="faqhref">Room Reservations</a>" page for details,
+                     or contact the Events Office at (987) 654-3210.</p>
+            </details>
+            <hr>
+            <details> <!-- Q3 -->
+                <summary>Are there dining options available in the Student Center?</summary>
+                <p>Yes, the Student Center has a food court with several dining options, including a café, 
+                    fast food, and grab-and-go choices.</p>
+            </details>
+            <hr>
+            <details> <!-- Q4 -->
+                <summary>Where can I get my student ID or replace a lost one?</summary>
+                <p>You can obtain or replace your student ID at the Student Services Office located on the first
+                     floor of the Student Center. Replacement fees may apply.</p>
+            </details>
+            <hr>
+            <details> <!-- Q5 -->
+                <summary>Does the Student Center offer any recreational facilities?</summary>
+                <p>Yes, we have a fitness center, game room, and lounge areas for students to relax and unwind. 
+                    Check our "Recreation" page for specific hours and equipment available.</p>
+            </details>
+        </main>
+    </body>
+</html>

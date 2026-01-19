@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Omar Aguilar
+        December 06, 2024  -->
+        <title>Web Project Assignment</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="webProject.css">
+        <script src="webProject.js" defer></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <!-- Group h1 and logo to style on same line -->
+        <div class="text-image-container">
+            <div class="text-container">
+                <h1>Student Center Rooms</h1>
+            </div>
+            <div class="image-container">
+                <img src="images/UHlogo.png" alt="University of Houston logo" id="uhlogo">
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <div class="topNav">
+            <a href="homePage.html" class="navLink">Home</a>
+            <a href="rooms.html" class="active" class="navLink">Rooms</a>
+            <a href="roomReservations.html" class="navLink">Room Reservation</a>
+            <a href="FAQ.html" class="navLink">FAQ</a>
+        </div>
+        <!-- Rooms page content -->
+        <main>
+            <!-- header -->
+            <h1 class="page-header">Rooms</h2>
+            <hr>
+            <!-- Room 1 -->
+             <div class="rbcontainer">
+                <div class="rbtext">
+                    <h3>Conference Room</h3>
+                    <p>A professional, medium-sized conference room equipped with 
+                        a large round table, seating for 10–15 people, a whiteboard, 
+                        and a wall-mounted screen for presentations. Ideal for small 
+                        meetings, interviews, and workshops</p>
+                </div>
+                <a href="roomReservations.html" class="img-link"><img src="images/conferenceRoom.png" alt="conference room" class="rbimg" data-room-id="conference-room"></a>
+             </div>
+            <!-- Room 2 -->
+            <div class="rbcontainer">
+                <div class="rbtext">
+                    <h3>Multipurpose Hall</h3>
+                    <p>A large, versatile space with flexible seating arrangements 
+                        that can accommodate up to 100 people. Equipped with a projector, 
+                        audio system, and stage, this hall is perfect for lectures, seminars, 
+                        social events, and club gatherings.</p>
+                </div>
+                <a href="roomReservations.html" class="img-link"><img src="images/multipurposeRoom.png" alt="multipurpose hall" class="rbimg" data-room-id="multipurpose-hall"></a>
+             </div>
+            <!-- Room 3 -->
+            <div class="rbcontainer">
+                <div class="rbtext">
+                    <h3>Study Lounge</h3>
+                    <p>A cozy, informal space with comfortable seating, individual workstations, 
+                        and quiet study pods. Designed for group study sessions or quiet study, 
+                        this lounge is suitable for 5–10 people looking for a relaxed environment.</p>
+                </div>
+                <a href="roomReservations.html" class="img-link"><img src="images/studyLounge.png" alt="study lounge" class="rbimg" data-room-id="study-lounge"></a>
+             </div>
+            <!-- Room 4 -->
+            <div class="rbcontainer">
+                <div class="rbtext">
+                    <h3>Tech Lab</h3>
+                    <p>A modern computer lab with 50 desktop computers, high-speed internet, and 
+                        printing facilities. Equipped with the latest software, it’s ideal for tech 
+                        workshops, software training, and online meetings or conferences.</p>
+                </div>
+                <a href="roomReservations.html" class="img-link"><img src="images/techLab.png" alt="tech lab" class="rbimg" data-room-id="tech-lab"></a>
+             </div>
+            <!-- Room 5 -->
+            <div class="rbcontainer">
+                <div class="rbtext">
+                    <h3>Creative Studio</h3>
+                    <p>A bright, open room designed for art and media projects, featuring art tables, 
+                        easels, and audio-visual equipment. Perfect for small art classes, brainstorming 
+                        sessions, and multimedia project work, accommodating up to 15 people.</p>
+                </div>
+                <a href="roomReservations.html" class="img-link"><img src="images/creativeStudio.png" alt="creative studio" class="rbimg" data-room-id="creative-studio"></a>
+             </div>
+         </main>
+    </body>
+</html>

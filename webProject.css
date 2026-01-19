@@ -1,0 +1,309 @@
+/* Add an image to the background of the webpage */
+html {
+    background-image: url(images/redBackground.png);
+    min-height: 100%;
+}
+
+/* Body Style */
+body {
+    background-image: url(images/placeholder.jpg);
+    margin: 20px;
+    padding: 20px;
+    height: 100%;
+    border: 10px solid rgb(228, 228, 228);
+    flex-grow: 1;
+    min-height: 95%;
+}
+
+/* Headings for Webpages */
+.page-header {
+    font-size: 3vw;
+}
+ .sub-header {
+    font-size: 2vw;
+ }
+
+/* -------------------------------------------------------------------------------- */
+
+/* TOP BAR */
+
+/* Combine Text and Image on same line*/
+.text-image-container {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(images/placeholder.jpg);
+}
+
+/* Style h1 in the heading */
+.text-image-container h1 {
+    color: rgb(255, 241, 241);
+    font-size: 3vw;
+    margin: 0;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+/* Text container style */
+.text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    background-color: rgb(126, 2, 2);
+    overflow: hidden; /* Hides any overflow */
+}
+
+/* Style the UH logo */
+#uhlogo {
+    width: 14vw;
+    margin: 5px 0 0 0;
+}
+
+/* Image container style */
+.image-container {
+    padding: 0;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* NAVIGATION BAR */
+
+/* Add styling to the navigation bar */
+.topNav{
+    background-image: url(images/greyBackGround.png);
+    overflow: hidden;
+    display: flex;
+    padding: auto;
+    height: auto;
+    width: auto;
+}
+
+/* Add styling ot the links within the navigation bar */
+.topNav a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: ghostwhite;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+/* Add styling to active tab */
+.topNav .active {
+    background-image: url(images/redBackground.png);
+    color: whitesmoke;
+    font-weight: bold;
+    border: 2px solid rgb(96, 0, 0);
+}
+
+/* Add styling to link while hovering */
+.navLink:hover {
+    background-color: whitesmoke;
+    color: black;
+    border: 2px dotted red;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* HOME PAGE */
+
+/* Video and Text container styling */
+.video-text-container {
+    display: flex;
+    align-items: center;
+    border: 3px dotted black;
+    border-radius: 20px;
+    height: 30vw;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+
+
+/* Image styling */
+.video-text-container iframe {
+    width: 40vw;
+    height: 30vw;
+    max-height: 90%;
+    border: 3px solid rgb(84, 2, 2);
+    border-radius: 30px;
+    margin: 0 20px;
+}
+
+/* Text styling */
+.video-text-container p {
+    flex: 1;
+    margin: 0;
+    font-size: 2.8vw;
+    align-items: center;
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+/* Style content within list-content */
+.list-containers {
+    display: flex;
+    width: 100%;
+    margin: 12px 12px;
+    border: 2px solid black;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 20px 0 20px;
+}
+
+/* Style Image */
+.list-containers img{
+    width: 30vw;
+    aspect-ratio: 1280px / 720px;
+    border: 2px solid white;
+    margin: 5px 10px;
+    border-radius: 0 40px 0 40px;
+}
+
+/* Style the paragraphs within list-content */
+.list-containers p{
+    flex: 1;
+    font-size: 2.5vw;
+    align-items: center;
+    max-height: 90%;
+    overflow-y: auto;
+    margin: 20px;
+}
+
+/* Bottom content Syling */
+.bottom-content {
+    font-size: 1.5vw;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* FAQ PAGE */
+
+#faqhref:hover {
+    text-decoration-color: red;
+    color: red;
+}
+
+/* Style the collapsible */
+summary{
+    font-size: 24px;
+    font-weight: bold;
+}
+details{
+    font-size: 18px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* Rooms PAGE */
+
+/* Styling for each section */
+.rbcontainer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    justify-content: space-between;
+}
+
+.rbtext{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.rbtext h3{
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.rbtext p{
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.rbimg{
+    width: 30vw;
+    max-height: 90%;
+    aspect-ratio: 1280px / 720px;
+    border: 5px solid white;
+    padding: 10px;
+}
+
+.img-link:hover{
+    border: 2px dashed red;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* Room Reservation PAGE */
+
+/* Styling for the header */
+#resForm {
+    text-align: center;
+}
+
+/* Style the first part of the form */
+form {
+    width: 60vw;
+    max-width: 100%;
+    min-width: 300px;
+    margin: 0 auto;
+    background-image: url(images/redBackground.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+  
+fieldset {
+    border: none;
+    padding: 10px;
+}
+
+fieldset label, legend{
+    color: whitesmoke;
+}
+  
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+  
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+  
+input, textarea {
+    background-color: #ffffff;
+    border: 2px solid #670000;
+    color: #0f0f0f;
+}
+
+/* Style radio buttons */
+.inline {
+    display: inline;
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+/* Style the submit button */
+#submit:hover {
+    background-color: #670000;
+    color: whitesmoke;
+}
+
+/* Style Legend */
+legend {
+    font-weight: bold;
+}
